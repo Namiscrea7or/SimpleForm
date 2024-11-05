@@ -2,8 +2,6 @@ import axios from 'axios';
 
 const API_URL = process.env.REACT_APP_URL;
 
-console.log(API_URL)
-
 export const register = async (email, password) => {
   return await axios.post(`${API_URL}/user/register`, { email, password });
 };
